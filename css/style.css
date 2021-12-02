@@ -39,11 +39,11 @@ header .logo {
     text-transform: uppercase;
 }
 
-.righSide {
+.rightSide {
     display: flex;
 }
 
-.btns {
+.rightSide__btns {
     position: relative;
     width: 50px;
     height: 40px;
@@ -55,25 +55,25 @@ header .logo {
     margin-left: 10px;
 }
 
-.btns .ion-icon {
+.rightSide__btns .ion-icon {
     font-size: 1.5em;
     color: var(--black);
 }
 
-.btns.menuToggle ion-icon {
+.rightSide__btns.menuToggle ion-icon {
     font-size: 3em;
 }
 
-.btns ion-icon:nth-child(2) {
+.rightSide__btns ion-icon:nth-child(2) {
     display: none;
     /* desativa o segundo icone de cada classe btn */
 }
 
-.btns.active ion-icon:nth-child(2) {
+.rightSide__btns.active ion-icon:nth-child(2) {
     display: block;
 }
 
-.btns.active ion-icon:nth-child(1) {
+.rightSide__btns.active ion-icon:nth-child(1) {
     display: none;
 }
 
@@ -96,7 +96,7 @@ header .logo {
     /* especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas. */
 }
 
-.mask {
+.main__mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +107,7 @@ header .logo {
     mix-blend-mode: screen;
 }
 
-.dark .mask{
+.dark .main__mask{
     filter: invert(1);
     mix-blend-mode: multiply ;
 }
@@ -159,7 +159,7 @@ header .logo {
     color: var(--white);
 }
 
-.copyright {
+.main__copyright {
     position: absolute;
     left: 100px;
     bottom: 40px;
@@ -192,7 +192,7 @@ header .logo {
     header{
         padding:20px ;
     }
-    .copyright{
+    .main__copyright{
         left: 20px;
         bottom: 30px;
     }
