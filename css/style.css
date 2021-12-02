@@ -5,17 +5,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 /* tag HTML */
-
 :root {
-    --black: #333;
-    --white: #fff;
+    --black: #000;
+    --white: #000;
+    --background: #fff;
 }
 
 .dark{
     --black: #fff;
-    --white: #333 ; 
+    --white: #fff ;   
+    --background: #000;
+
 }
 
 header {
@@ -47,7 +48,7 @@ header .logo {
     position: relative;
     width: 50px;
     height: 40px;
-    background: var(--white);
+    color: var(--white);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +132,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--white);
+    background: var(--background);
     z-index: 4;
     transition: 0.5s;
 }
@@ -169,7 +170,7 @@ header .logo {
     color: var(--black);
 }
 
-.sci {
+.main__sci {
     position: absolute;
     right: 100px;
     bottom: 40px;
@@ -178,10 +179,10 @@ header .logo {
     flex-direction: column;
 }
 
-.sci li {
+.main__sci li {
     list-style: none;
 }
-.sci li a{
+.main__sci li a{
     text-decoration: none;
     color: var(--black);
     font-size: 1.75em;
@@ -196,7 +197,7 @@ header .logo {
         left: 20px;
         bottom: 30px;
     }
-    .sci{    
+    .main__sci{    
         right: 20px;
         bottom: 20px;
     }
