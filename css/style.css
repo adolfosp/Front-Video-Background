@@ -10,6 +10,7 @@
     --black: #000;
     --white: #000;
     --background: #fff;
+    
 }
 
 .dark{
@@ -157,7 +158,7 @@ header .logo {
 
 .navigation li a:hover {
     background: var(--black);
-    color: var(--white);
+    color: var(--background);
 }
 
 .main__copyright {
